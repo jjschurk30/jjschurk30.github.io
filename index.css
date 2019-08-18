@@ -1,0 +1,36 @@
+body {
+    background-color: #bf132c;
+}
+
+
+div {
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #efe8e8;
+    font-size: 40px;
+    font-family: "Lucidia Sans";
+    text-align: center;
+}
+
+
+#description {
+    text-align: center;
+    font-size: 36px;
+}
+
+#survey-form {
+    color: #030d1e;
+    font-family: "Georgia";
+}
+
+
+
+.container-fluid {
+    text-align: center;
+}
