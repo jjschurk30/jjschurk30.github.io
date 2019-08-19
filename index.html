@@ -1,72 +1,40 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
-
+<html lang = "en">
 <head>
-    <title>Survey form</title>
+    <title>Quotes Ahoy!</title>
 
     <meta charset = "utf-8">
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <link rel="stylesheet" type="text/css" href="index.css">
 
-    <script src="Survey.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+    <script src="index.js"></script>
+
 </head>
-
 <body>
-
-<h1 id = "title">UMSL Survey Form</h1>
-
-<div class = "container-fluid text-center">
-    <p id = "description">How can we improve your college experience at UMSL?</p>
-
-    <form id = "survey-form" action="/action_page.php">
-
-        <br>*Name: <input type = "text" id = "name-label" required placeholder = "Enter your name"></br>
-
-
-        <br>*Email: <input type = "email" id = "email-label" required  placeholder = "Enter your Email"></br>
+<div class="container-fluid">
+    <h1 id ="title">Quotes Ahoy!</h1>
+    <br>
+    <p id = "info">Here's some of my favorite quotes. Enjoy!</p>
+    <img src="virgin.jpg" alt = "virgin"  id = "virgin">
+    <br>
+    <div>
+        <button class = "button" onclick = "newQuote()">Quote</button>
+    </div>
+    <div id = "message">Hello</div>
 
 
-        <br>*Age: <input type = "number" id = "number-label" min = "18" max = "120" required placeholder = "Age"></br>
+    <br>
 
-        <p id="demo"></p>
-
-        <div id = "year">
-            What is your current standing at UMSL<br><select>
-            <option value="Freshman" id = "freshman">Freshman</option>
-            <option value="Sophomore" id = "sophomore">Sophomore</option>
-            <option value="Junior" id = "junior">Junior</option>
-            <option value="Senior" id = "senior">Senior</option>
-        </select></br>
-        </div>
-
-        What is the one area at UMSL that needs an upgrade the most?<br><input type = "radio" name = "Upgrade" value = "Parking Lot">Parking Lot</br>
-
-        <br><input type = "radio" name = "Upgrade" value = "Classrooms">Classrooms</br>
-
-        <br><input type = "radio" name = "Upgrade" value = "Cafeteria">Cafeteria</br>
-
-        Who are the most important groups currently at UMSL. (Check all that apply)
-        <br><input type="checkbox" name="Teachers" value="Educators">Educators</br>
-
-        <br><input type="checkbox" name="Deans" value="Administration">Administration</br>
-
-        <br><input type="checkbox" name="Help" value="Counselors">Counselors</br>
-
-        <br><input type="checkbox" name="Janitor" value="Custodians">Custodians</br>
-
-        <br><input type="checkbox" name="Food" value="Food Service">Food Service</br>
-
-
-        Any Other Suggestions, please enter in text box.<br><textarea rows = "3" cols = "40" placeholder= "Enter Comment here">
-</textarea></br>
-
-        <input type="submit" value="Submit">
-    </form>
-</div>
 </div>
 </body>
 </html>
